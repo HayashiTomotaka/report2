@@ -72,10 +72,9 @@
 
         var texture1 = textureLoader.load("star.png");
         const material1 = new THREE.SpriteMaterial({ map: texture1,});
-
         const sprite1 = new THREE.Sprite(material1);
         sprite1.position.x = 100;
-        sprite1.position.y = 0;
+        sprite1.position.y = -20;
         sprite1.position.z = -100;
         sprite1.scale.set(100,100,100);
         scene.add(sprite1);
