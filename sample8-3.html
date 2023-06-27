@@ -69,6 +69,15 @@
         sprite2.scale.set(1,2,1);
         sprite2.position.set(1,1,0); //位置を指定
         scene.add(sprite2);
+
+        // 板ポリ左用
+        var mat0 = new THREE.MeshLambertMaterial();
+        mat0.map = texture0;
+        // 板ポリ右用
+        var mat1 = 
+        new THREE.MeshLambertMaterial({transparent: true});
+        mat1.map = texture0;
+
         
         update();
 
