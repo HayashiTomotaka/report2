@@ -53,10 +53,7 @@
         const axisHelper = new THREE.AxisHelper(2); //軸の長さ　X：赤、Y：緑、z：青
         scene.add(axisHelper);
 
-        // 木をスプライトで作成
-        var textureLoader = new THREE.TextureLoader();  
-        var texture = textureLoader.load("tree0.png");
-        const material = new THREE.SpriteMaterial({ map: texture,});
+  
 
         // 木左
         const sprite1 = new THREE.Sprite(material);
